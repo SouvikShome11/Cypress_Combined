@@ -1,0 +1,7 @@
+Framework Creation Flow:
+
+1. Create a happy flow of test case
+2. Then Move Locators and Action methods to POM classes, along with direct cy commands
+3. Implemnet Base class (click, enterText methods), extend base class in POM class, replace cy commads with implemented Base class methods
+4. Implemnet method chaining by passing correct page object from action methods, and remove object creation of each classes from test class
+5. Implemnet Mochawesome Reporter -Implemented

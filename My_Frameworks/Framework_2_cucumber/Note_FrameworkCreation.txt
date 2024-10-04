@@ -1,0 +1,47 @@
+1. Install Cypress
+2. Install -> npm i cypress-cucumber-preprocessor
+3. In cypress.config.js ->
+    a. const cucumber = require('cypress-cucumber-preprocessor').default
+    b.  setupNodeEvents(on, config) {
+      on('file:preprocessor',cucumber())
+    },
+    c. specPattern: "cypress/e2e/cucumber/feature/*.feature"
+
+4. In package.json
+    "cypress-cucumber-preprocessor": {
+    "nonGlobalStepdefinitions": false,
+    "step_definitions": "cypress/e2e/cucumber/stepDefinitions/*",
+    }
+    
+5. Then Create feature file and corresponding stepdef files
+
+6. SYNC BETWEEN feature and stepdef
+    a. open setting and search for cucumber, edit json
+    b. "cucumber.features": ["cypress/e2e/cucumber/feature/*.feature"],
+       "cucumber.glue": ["cypress/e2e/cucumber/stepDefinitions/*"]
+
+7. Intsall Plugins: Cucumber, cuke (Auto Step Def Generator),  Cucumber(Gherkin)
+
+8. Implemnet Reporting: Cucumber HTML Report (Prefered)
+    a. add this in package.json -> cypress-cucumber-preprocessor (To Generate result JSON file )
+        "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+
+    b. Install -> multiple-cucumber-html-reporter
+    c. Add the multiple-cucumber-html-reporter.js file in root
+    d. Run Test in headless mode to generate cucumber.json
+    e. Run -> node cucumber-html-report.js
+
+9. Add Screenshots for Failed Test Cases
+    a. add a folder called Reporting
+    b. add 2 file delete-results.js(to delete old .json result) report.js (This code is givein in Cypress cucuber report official site)
+    c. Add scripts in package.json
+
+10. what is the use of && and || operator
+11. Implemnet PageObject Model
+
+

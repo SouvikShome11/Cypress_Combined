@@ -1,0 +1,27 @@
+{
+  "name": "framework_1",
+  "version": "1.0.0",
+  "description": "Udemy: Cypress V13.14 -Docker + Cucumber + Jenkins - SEP'24 Course",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test:cyprress_dashboard": "npx cypress run --record --key 6332cf3b-3355-4a96-b386-9a61638209f5",
+    "scripts": "cypress run",
+    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
+    "pretest": "npm run clean:reports",
+    "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > ./cypress/reports/mochareports/report.json",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o  cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-report",
+    "test": "npm run scripts || npm run posttest"
+  },
+  "author": "Souvik Shome",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.14.2",
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

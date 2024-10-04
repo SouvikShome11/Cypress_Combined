@@ -1,0 +1,102 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Scenario Outline Example for cypress Cucumber",
+    "line": 1,
+    "id": "scenario-outline-example-for-cypress-cucumber",
+    "tags": [],
+    "uri": "3_scenarioOutline_example.feature",
+    "elements": [
+      {
+        "id": "scenario-outline-example-for-cypress-cucumber;google-keyword-search",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Google Keyword Search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I Visit Google",
+            "result": {
+              "status": "passed",
+              "duration": 2870000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for 'Cypress'",
+            "result": {
+              "status": "passed",
+              "duration": 3237000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "scenario-outline-example-for-cypress-cucumber;google-keyword-search",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Google Keyword Search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I Visit Google",
+            "result": {
+              "status": "passed",
+              "duration": 1223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for 'Selenium'",
+            "result": {
+              "status": "passed",
+              "duration": 3270000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "scenario-outline-example-for-cypress-cucumber;google-keyword-search",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Google Keyword Search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I Visit Google",
+            "result": {
+              "status": "passed",
+              "duration": 1237000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for 'Webdriver IO'",
+            "result": {
+              "status": "passed",
+              "duration": 3298000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

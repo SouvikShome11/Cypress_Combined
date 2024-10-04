@@ -1,0 +1,5 @@
+cypress-multi-reporters
+mocha
+mochawesome
+mochawesome-merge
+mochawesome-report-generator
